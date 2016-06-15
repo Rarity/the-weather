@@ -5,28 +5,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" href="main.css">
 	<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <div id ="output" class="">что то</div>
+  <div id ="weather_output" class="weather_output"></div>
 
-<script>
-	var apiKey = "7da3aefac316b92615bb35ec67dbd21b" ;
-	var city = "moscow";
 
-	
-	$(document).ready(function() {
-			$.getJSON("http://api.openweathermap.org/data/2.5/weather?apikey="+apiKey+"&q="+city+"&units=metric", function(json) {
-				var temp = json.main.temp;
-				var city = json.name;
-				var icon = json.weather[0].icon;
-				$("#output").html("Город: "+ city + "<br>" +
-					"Температура: " + temp + "<br>" +
-					'<img src="http://openweathermap.org/img/w/'+icon+'.png">'
-					);
-			});   
-		})
-</script>
+
+
+	<script src="main.js"></script>
 </body>
 </html>
