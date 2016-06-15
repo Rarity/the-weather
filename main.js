@@ -18,7 +18,5 @@ function plus_sign(t){
 	if (t>0){
 		return "+";
 	}
-	if (t<0){
-		return "-"
-	}
+	return "";
 };
