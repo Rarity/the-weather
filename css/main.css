@@ -3,7 +3,9 @@
 body {
 	
 	background-color: #205eaf;
-	background: url(../images//bg1.jpg) no-repeat center;
+	background: url(../images/bg1.jpg) no-repeat ;
+	-webkit-background-size: cover;
+	background-size: cover;
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
 	color: #eee;
@@ -12,8 +14,6 @@ body {
 .header {
 	height: 500px;
 	background: url(../images/bg_moscow_day.jpg) no-repeat center;
-	-webkit-background-size: cover;
-	background-size: cover;
 	padding: 30px;
 	border-radius: 5px;
 }
