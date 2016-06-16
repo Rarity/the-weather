@@ -1,0 +1,192 @@
+
+
+body {
+
+	background-color: #205eaf;
+	background: url(../images//bg1.jpg) no-repeat center;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	color: #eee;
+}
+
+.header {
+	height: 500px;
+	background: url(../images/bg_moscow_day.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 30px;
+	border-radius: 5px;
+
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.weather_output {
+	text-align: center;
+	display: block;
+	width: 240px;
+	padding: 50px;
+	border: 1px solid black;
+	margin: 10% auto;
+}
+
+.city_name {
+	font-size: 4em;
+}
+
+.temp {
+	font-size: 3em;
+}
+
+.daily_weather {
+	width: 100%;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.day_block {
+
+	position: relative;
+	font-size: 2em;
+	box-sizing: border-box;
+	width: 14.2857%;
+	height: 100%;
+	border-right: 1px solid #a2a2a2;
+	/*outline: 1px solid red;*/
+	/*background-color: #333;*/
+}
+.day_block:last-child {
+	border-right: none;
+}
+
+.day_block::before{
+	overflow: hidden;
+	position: absolute;
+	background-color: #fff;
+	display: block;
+	width: 100%;
+	height: 100%;
+	content:' ';
+	opacity: 0.2;
+}
+.day_text {
+	margin: 20px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	.day_block {
+		width: 100%;
+	}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}

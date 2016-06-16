@@ -4,19 +4,19 @@ var city = "moscow";
 
 $(document).ready(function() {
 	$.getJSON("http://api.openweathermap.org/data/2.5/weather?apikey="+apiKey+"&q="+city+"&units=metric", function(json) {
-		var temp = json.main.temp;
+		var temp = -2;
 		var city = json.name;
 		var icon = json.weather[0].icon;
-
-		$("#weather_output").html("<span class='temp'>"+ plus_sign(temp) + Math.round(temp) + "</temp><br>" +
-			'<img src="http://openweathermap.org/img/w/'+icon+'.png">'
-			);
+		
+		// view
+		$("#city_name").html(city);
+		$("#weather_output").html(plus_sign(temp) + Math.round(temp) +"&nbsp;&deg;C");
+		
 	});   
 })
 
 function plus_sign(t){
-	if (t>0){
+	if (t>0)
 		return "+";
-	}
 	return "";
 };

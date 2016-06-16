@@ -3,18 +3,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- 	<script>
+	$(document).ready(function(){
+	  $("body").css("display","none").fadeIn("slow");
+	});
+	</script> -->
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="main.css">
+	<title>The Weather</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
 	<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <div id ="weather_output" class="weather_output"></div>
+<div class="container">
+	<div class="header">
+		<div id ="city_name" class="city_name"></div>
+		<div id ="weather_output" class="temp"></div>
+
+	</div> <!-- .header -->
+	<div class="daily_weather">
+		<div class="day_block">
+			<span class="day_text">Mon</span>
+			<span class="day_text">+25 &deg;C</span>
+		</div>
+		<div class="day_block">
+			<span class="day_text">Thu</span>
+			<span class="day_text">+25 &deg;C</span>
+		</div>
+		<div class="day_block">
+			<span class="day_text">Wen</span>
+			<span class="day_text">+25 &deg;C</span>
+		</div>
+		<div class="day_block">
+			<span class="day_text">Thu</span>
+			<span class="day_text">+25 &deg;C</span>
+		</div>
+		<div class="day_block">
+			<span class="day_text">Fri</span>
+			<span class="day_text">+25 &deg;C</span>
+		</div>
+		<div class="day_block">
+			<span class="day_text">Sat</span>
+			<span class="day_text">+25 &deg;C</span>
+		</div>
+		<div class="day_block">
+			<span class="day_text">Sun</span>
+			<span class="day_text">+25 &deg;C</span>
+		</div>
+	</div>
+</div> <!-- .container -->
 
 
 
 
 	<script src="main.js"></script>
+
 </body>
 </html>
