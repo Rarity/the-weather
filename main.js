@@ -3,6 +3,7 @@ var city = "moscow";
 
 
 $(document).ready(function() {
+	$("body").css("display","none").fadeIn(500);	
 	$.getJSON("http://api.openweathermap.org/data/2.5/weather?apikey="+apiKey+"&q="+city+"&units=metric", function(json) {
 		var temp = -2;
 		var city = json.name;
@@ -11,7 +12,7 @@ $(document).ready(function() {
 		// view
 		$("#city_name").html(city);
 		$("#weather_output").html(plus_sign(temp) + Math.round(temp) +"&nbsp;&deg;C");
-		
+
 	});   
 })
 
