@@ -5,7 +5,7 @@ var city = "moscow";
 $(document).ready(function() {
 	$("body").css("display","none").fadeIn(500);	
 	$.getJSON("http://api.openweathermap.org/data/2.5/weather?apikey="+apiKey+"&q="+city+"&units=metric", function(json) {
-		var temp = -2;
+		var temp = json.temp;
 		var city = json.name;
 		var icon = json.weather[0].icon;
 		
