@@ -17,7 +17,5 @@ $(document).ready(function() {
 })
 
 function plus_sign(t){
-	if (t>0)
-		return "+";
-	return "";
+	return (t > 0) ? "+" : "";
 };
